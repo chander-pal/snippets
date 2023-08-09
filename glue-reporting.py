@@ -54,7 +54,7 @@ def lambda_handler(event, context):
     </style>"""
     styled_html_table = apply_row_styling(html_table)
     print(styled_html_table)
-    mail_head = f'<h4>Hi Team,<br>Please find the Glue status report for {date_ist}.<br></h4>'
+    mail_head = f'<h4>Please find the Glue status report for {date_ist}.<br></h4>'
     all_head = '<h2>Job Details:</h2>'
     body = style+mail_head+all_head+styled_html_table
     print(body)
